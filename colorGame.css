@@ -1,0 +1,77 @@
+body {
+	background-color: #232323;
+	margin: 0;/*we get rid of the margins on all sides on the body*/
+	font-family: "Montserrat", "Avenir";/*these fonts are already built in our system but we need to change the weight of these fonts because for the h1 default is to makes it bolded so we need to change h1 font-weight to normal*/ 
+}
+
+.square {
+	width: 30%;
+	background: purple;
+	padding-bottom: 30%;
+	float: left;
+	margin: 1.66%;
+	border-radius: 15%;
+	transition: background 0.6s;
+	-webkit-transition: background 0.6s;
+	-moz-transition: background 0.6s; 
+} 
+#container {
+	margin: 20px auto; /*0 margin for top & bottom and auto for left & right*/
+    max-width: 600px;
+}
+h1 {
+	text-align: center;
+	line-height: 1.1;/*we need to shrink the line height in the h1 section but now we lost the space at the top and bottom, to fix that we add some padding only on the top & bottom*/
+	font-weight: normal;
+    color: white;
+    background: steelblue;/*make sure that h1 background in javascript would be the same*/ 
+    margin: 0;/*we get rid of the margins on all sides on top, bottom, left and right*/
+    text-transform: uppercase;
+    padding: 20px 0;/*which means 20px top and 20px bottom and 0 left & right*/
+    /*we could also write padding-top: 20px; padding-bottom: 20px; but shorter way is better*/ 
+}
+
+#colorDisplay {
+	font-size: 200%;/*we want to make our span font size bigger than our h1 font size*/
+}
+
+#message {
+	display: inline-block;/*to see this style, we also need to asign it a width*/
+	width: 20%;/*now this span takes up 20% of the screen even though it's empty*/
+}
+
+/*span {
+	color: white;
+}*/
+
+#stripe {
+	background: white;
+	height: 30px;
+	text-align: center;
+	color: black;
+}
+
+.selected {
+	color: white;
+	background: steelblue;
+}
+
+button {
+	border: none;
+	background: none;
+	text-transform: uppercase; 
+	height: 100%;/*which means it will take up 100% of the containing element*/
+	font-weight: 700;
+	color: steelblue;
+	letter-spacing: 1px;
+	font-size: inherit;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	outline: none;
+}
+
+button:hover {
+	color: white;
+	background: steelblue;
+}
